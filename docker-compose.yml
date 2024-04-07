@@ -18,7 +18,7 @@ services:
       - POSTGRES_PASSWORD=onlinejudge
 
   oj-judge:
-    image: registry.cn-hongkong.aliyuncs.com/oj-image/judge:1.6.0
+    image: registry.cn-hongkong.aliyuncs.com/oj-image/judge:1.6.1
     restart: always
     read_only: true
     cap_drop:
@@ -41,7 +41,7 @@ services:
       # - judger_debug=1
 
   oj-backend:
-    image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.0
+    image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
     restart: always
     depends_on:
       - oj-redis
