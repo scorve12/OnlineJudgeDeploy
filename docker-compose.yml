@@ -42,7 +42,7 @@ services:
 
   oj-backend:
     #image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
-    image: jeahokim/oj_swagger:latest
+    image: scorve12/chosun_oj:latest
     restart: always
     depends_on:
       - oj-redis
