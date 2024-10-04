@@ -41,7 +41,8 @@ services:
       # - judger_debug=1
 
   oj-backend:
-    image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
+    #image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
+    image: jeahokim/oj_swagger:latest
     restart: always
     depends_on:
       - oj-redis
